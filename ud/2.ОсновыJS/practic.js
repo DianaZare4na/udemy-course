@@ -101,7 +101,7 @@ clone.d =20;
 
 const oldArray = ['a','b','c'];
 const newArray = oldArray.slice();
-newArray[1] = 'fgh'
+newArray[1] = 'fgh';
 console.log(oldArray);
 console.log(newArray);
 /**оператор разворота "..."  */
