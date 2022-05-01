@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
 import nextId from "react-id-generator";
-import './employees-add-form.css';
+//import './employees-add-form.css';
+// import './employees-add-form.scss';
+import './employees.sass';
 
 class EmployeesAddForm extends Component {
    htmlId = nextId();
 
-   constructor(props){
-      super(props);
-      this.state ={
+      state ={
          name: '',
          salary: '',
         
       }
-   }
    
    onSubmit = (e) => {
       e.preventDefault();
@@ -29,6 +28,8 @@ class EmployeesAddForm extends Component {
          [e.target.name] : e.target.value
       })
    }
+
+    
    render() {
       const {name, salary} = this.state;
 
